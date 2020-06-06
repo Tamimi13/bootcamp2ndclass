@@ -33,7 +33,7 @@ jobs:
       run: yarn build
        
     - name: install surge 
-      run: sudo npm install -g surge
+      run: npm install -g surge
     - name: deploying using surge
       run: surge ./ http://bootcampsampleclass2.surge.sh/ --token ${{ secrets.BOOTCAMP2020 }}      
     
